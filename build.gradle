@@ -1,0 +1,38 @@
+plugins {
+    id 'java'
+    id 'application'        /* Needed for mainClassName property, also brings in the 'run' task */ 
+}
+
+repositories {
+    jcenter()   /* necessary to bring in Lanterna library */
+}
+
+dependencies {
+    implementation 'com.googlecode.lanterna:lanterna:3.0.0-beta3'
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src']
+        }
+    }
+}
+
+mainClassName = 'Main'
+
+jar {
+    from sourceSets.main.output
+
+    dependsOn configurations.runtimeClasspath
+
+    from {
+        configurations.runtimeClasspath.findAll { it.name.endsWith('jar') }.collect { zipTree(it) }
+    }
+
+    manifest {
+        attributes 'Main-Class': 'Main'
+    }
+}
+
+archivesBaseName = 'Pi'
