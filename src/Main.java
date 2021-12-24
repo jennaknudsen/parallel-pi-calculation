@@ -3,7 +3,7 @@ import java.util.Collections;
 
 /**
  * The main class for this project.
- * @author Jonas Knudsen
+ * @author Jenna Knudsen
  */
 public class Main {
     /**

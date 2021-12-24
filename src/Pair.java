@@ -1,6 +1,6 @@
 /**
  * Generic class I created for handling key-value pairs
- * @author Jonas Knudsen
+ * @author Jenna Knudsen
  * @param <K> Generic key
  * @param <V> Generic value
  */

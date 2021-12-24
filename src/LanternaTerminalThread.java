@@ -4,7 +4,7 @@ import com.googlecode.lanterna.terminal.Terminal;
 /**
  * Class implements Runnable, used to create a Lanterna terminal
  * to print the digits of Pi to the screen.
- * @author Jonas Knudsen
+ * @author Jenna Knudsen
  */
 public class LanternaTerminalThread implements Runnable {
     /**

@@ -3,7 +3,7 @@ import java.util.LinkedList;
 /**
  * Class that uses the standard Java LinkedList library
  * and makes it thread-safe with enqueues and dequeues.
- * @author Jonas Knudsen
+ * @author Jenna Knudsen
  * @param <E> Generic type used for the queue
  */
 public class ThreadSafeQueue<E> {

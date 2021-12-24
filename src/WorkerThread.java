@@ -1,7 +1,7 @@
 /**
  * Class implements the WorkerThreads used in this program.
  * The exact number of WorkerThreads created should match the computer's CPU cores.
- * @author Jonas Knudsen
+ * @author Jenna Knudsen
  */
 public class WorkerThread implements Runnable {
     /**
